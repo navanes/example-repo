@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>my project-BBC News</title>
+
+    <style type="text/css">
+        
+        #topbar {
+            width:100%;
+            margin: 0 auto;
+            height: 50px;
+            background-color: black;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: helvetica,arial,snas-serif;
+
+        }
+
+        #logo{
+
+            margin: 10px 8px 5px 50px;
+            width: 85px;
+            
+            float: left;
+        }
+     
+        .topbar-section{
+
+            float: left;
+            border-left: 1px grey solid;
+            height: 100%;
+            margin: 0
+            auto;
+        }
+
+        .topbar-section a:hover{
+
+            color: #890f0f;
+        }
+
+        
+    
+        #signlogo{
+
+            margin: 8px 5px 8px 10px;
+            float: left;
+            
+        }
+
+        #signintext{
+
+           font-weight: bold;
+           font-size: 100%;
+           color: white;
+           position: relative;
+           top:18px;
+           margin-right: 80px;
+           text-decoration: none;
+
+
+        }
+
+
+        #signin-div a:hover{
+         
+            color: #27a5f4;
+        }
+
+
+
+        .topbarmenu{
+
+            font-size: 100%;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            top: 18px;
+            margin: 12px;
+            text-decoration: none;
+        }
+
+      
+        #arrow{
+
+            float: right;
+            margin: 12px 5px 7px 80px;
+        }
+
+        #searchbox{
+
+            background-color: white;
+            border:none;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 5px;
+            margin: 11px 0 5px 11px;
+            float: left;
+        }
+
+        #magnifier{
+
+            float: right;
+            margin-top: 11px;
+            height: 27px;
+
+        }
+
+        .clear{
+            clear: both;
+
+        }
+
+        #menu-bar-container{
+
+            border-top: 1px solid grey;
+            background-color: #ad071e;
+            width: 100%;
+            height: 70px;
+            margin: center;
+        }
+
+        #menu-bar{
+
+            width: 94%;
+            margin: 0 auto;
+
+        }
+
+        h1{
+
+            color: white;
+            padding: 0;
+            margin: 0;
+            font-size: 40px;
+            font-weight: normal;
+            padding-top: 8px;
+            float: left;
+        }
+
+        #local-news{
+
+            border: 1px #BB4545 solid;
+            float: right;
+            width: 220px;
+            padding: 5px 5px 0 10px;
+            margin: 5px 10px 0 0;
+
+
+        }
+
+        #local-news a{
+
+            color:white;
+            text-decoration:none;
+            font-size: 23px;
+            position: relative;
+            top: -13px;
+            
+
+        }
+
+        #local-news a:hover{
+
+            text-decoration: underline;
+            text-decoration-color: yellow;
+        }
+
+        #local-news img{
+
+           
+            height: 40px;
+        
+        }
+
+        
+
+        #menu-bar-2-container {
+
+            background-color: #A91717;
+            width: 100%;
+
+        }
+
+        #menu-bar-2{
+            width: 80%;
+            margin: 0 auto;
+            height: 40px;
+
+        }
+
+        #menu-bar-2 a{
+
+            color:white;
+            text-decoration:none;
+            margin-top: 5px;
+            padding: 0 10px;
+            border-right: 1px solid #BB4545; 
+            font-size: 16px;
+            position: relative;
+            top:10px;
+
+        }
+
+        #menu-bar-2 a:hover{
+
+            text-decoration: underline;
+        }
+
+        .no-border{
+
+            border: none !important;
+        }
+
+        #down-arrow{
+
+            position: relative;
+            top: 10px;
+            height: 14px;
+
+        }
+
+        #page-container{
+
+            width: 1000px;
+            margin: 0 auto;
+
+
+
+        }
+
+        #techno{
+            font-weight: normal;
+            margin-top: 40px;
+            font-size: 20px;
+            border-bottom: 2px solid #a91717;
+            width: 105px;
+        }
+
+        h3 a{
+
+            color: black;
+            font-size: 26px;
+            text-decoration: none;
+        }
+
+        h3 a:hover{
+
+            color: #0eead8;
+            text-decoration: underline;
+
+        }
+
+        
+
+        #article-summary{
+
+            color: #5a5a5a;
+            width: 250px;
+            float: left;
+        }
+
+        #article-summary img{
+
+            height: 18px;
+            position: relative;
+            top:2px;
+ 
+        }
+
+        #topic-link{
+
+            text-decoration: none;
+            color: #a91717;
+            border-left: 1px solid grey;
+            padding-left: 10px;
+        }
+        #article-summary a:hover{
+
+            color:  #0eead8;
+        }
+
+        .date{
+
+            padding-right: 10px;
+            font-size: 11px;
+        }
+
+    
+
+        #article-container{
+
+            float: left;
+            width: 700px;
+            
+            padding-right: -10px;
+        }
+
+        #mancity{
+
+            width:350px;
+            height: 220px;
+            margin-left: 10px;
+        }
+
+        #article-hr{
+
+            border: 0.5px solid #a91717;
+            width: 50px;
+        }
+
+        .article-link{
+
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+
+        #watch-listen{
+
+            margin-left: 10px;
+            width: 279px;
+            float: right;
+            border-left: 1px solid #CCCCCC;
+            padding-left: 8px;
+
+
+        }
+
+        h4{
+
+            font-weight: normal;
+            font-size: 22px;
+        }
+
+        .article-side-image{
+
+            float: left;
+            width: 85px;
+            margin-right: 10px;
+
+        }
+
+
+        .watch-listen-link{
+
+            
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 12px;
+
+        }
+
+        .watch-listen-link:hover{
+
+            color: #1167a8;
+
+        }
+
+        .side-article{
+
+            float: right;
+            width: 180px;
+            position: relative;
+            top: -18px;
+        }
+
+
+        #some-more{
+            
+            margin-top: 30px;
+            float: left;
+            
+
+        }
+
+
+        #some-more a{
+
+            text-decoration: none;
+        }
+
+        
+
+        .prison{
+
+            width:600px;
+            
+        }
+
+        #prison{
+
+            border-bottom: 1px solid #CCCCCC;
+        }
+
+        #prison :hover{
+
+            transition: opacity 1s ease-in-out;
+            opacity: 0.7;
+        }
+
+        .food{
+
+           width: 600px;
+          
+        }
+
+        #food :hover{
+
+            transition: opacity 1s ease-in-out;
+            opacity: 0.7;
+
+        }
+
+     
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="topbar">
+        
+        <a href="https://www.bbc.com/"><img id="logo" src="armenia/bbclogo.png"></a>
+
+        <div id="signin-div" class="topbar-section" >
+            
+            <img id="signlogo" src="armenia/signinlogo.png">
+
+            <span><a href="https://account.bbc.com/signin" id="signintext">Sign in</a> </span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span><a href="https://www.bbc.com/news" class="topbarmenu">News</a></span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span><a href="https://www.bbc.com/sport" class="topbarmenu">Sport</a></span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span><a href="https://www.bbc.com/weather" class="topbarmenu">Weather</a></span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span><a href="https://shop.bbc.com/" class="topbarmenu">Shop</a></span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span><a href="https://www.bbc.com/reel/" class="topbarmenu">Reel</a></span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span><a href="http://www.bbc.com/travel/" class="topbarmenu">Travel</a></span>
+
+        </div>
+
+        <div class="topbar-section">
+
+            <span class="topbarmenu">More</span>
+
+            <img id="arrow" src="armenia/arrow.png">
+
+        </div>
+
+        <div class="topbar-section">
+            
+            <input id="searchbox"  type="text" name="search" placeholder="Search...">
+
+            <img id="magnifier" src="armenia/magnifying-glass.png">
+
+        </div>
+
+
+
+    </div>
+
+
+        <div class="clear"></div>
+
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+
+                <h1>NEWS</h1>
+
+                <div id="local-news">
+                    
+                    
+
+                    <a href="https://www.tehrantimes.com">Find local news</a>
+
+                    <img src="armenia/pointer.png">
+
+                </div>
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="menu-bar-2-container">
+
+                <div id="menu-bar-2">
+
+                    <a href="https://www.bbc.com">Home</a>
+
+                    <a href="https://www.theguardian.com/uk-news">UK</a>
+
+                    <a href="https://globalvoices.org">World</a>
+
+                    <a href="https://www.businessinsider.com">Business</a>
+
+                    <a href="https://www.politico.com/politics">Politics</a>
+
+                    <a href="https://www.theverge.com/tech">Tech</a>
+
+                    <a href="https://www.insidescience.org/?gclid=CjwKCAiAv9riBRANEiwA9Dqv1X69FE4nnLVt_7pjk3sn5kdS02dIiYILgxmAyzSqPn-5tw2vElG4vRoCvc0QAvD_BwE">Science</a>
+
+                    <a href="https://www.nbcnews.com/health/health-news">Health</a>
+
+                    <a href="https://www.theguardian.com/education">Education</a>
+
+                    <a href="https://www.news.com.au/entertainment">Entertainment & Arts</a>
+
+                    <a href="https://www.youtube.com/">Video & Audio</a>
+
+                    <a href="" class="no-border">More</a>
+
+                    <img id="down-arrow" src="armenia/down-arrow.png">
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="page-container">
+
+            <div id="main-article">
+            
+                    <h2 id="techno">Technology</h2>
+
+                <div id="article-container">
+
+                    <h3><a href="https://www.bbc.com/sport/football/47111507">Premier League title race: 'Champions<br> Man City back in the mood for a fight'</a> </h3>
+
+                    <div id="article-summary">
+
+                        <p>Manchester City could contemplate nothing but victory at the start of a week loaded with significance for the Premier League title race - and Arsenal's disappearing act ensured they tightened the pressure valve on Liverpool...</p>
+
+                        <p><img src="armenia/clock.png"><span class="date">4 February 2019 </span> <a id="topic-link" href="https://www.theverge.com/tech">Technology</a></p>
+
+                        <hr id="article-hr" align="left">
+
+                        <a class="article-link" href="https://www.bbc.com/sport/live/47113849">Man City cut liverpool's lead</a>
+
+                    </div>
+
+                    <img id="mancity" src="armenia/mancity.png">
+
+                </div>
+
+             </div>
+
+         
+           
+
+            <div id="watch-listen">
+                
+                <h4>Watch/Listen</h4>
+
+                <a href="https://www.youtube.com/watch?v=yapFrrEEcKg"><img class="article-side-image" src="armenia/blockchain.png" ></a>
+
+                <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=yapFrrEEcKg">Blockchain 101 for Scientists -<br> Publishing and Peer Review</a>
+
+                    <span style="color:grey;" class="date">Published on Jun 25, 2018 <a id="topic-link" href="https://www.insidescience.org/?gclid=CjwKCAiAv9riBRANEiwA9Dqv1X69FE4nnLVt_7pjk3sn5kdS02dIiYILgxmAyzSqPn-5tw2vElG4vRoCvc0QAvD_BwE">Science</a></span></p>
+
+                </div>
+
+                <div class="clear"></div>
+                    
+                    <a href="https://www.youtube.com/watch?v=sX1Y2JMK6g8"><img class="article-side-image" src="armenia/Rocket.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=sX1Y2JMK6g8">SpaceX Falcon Heavy Engineering Masterpiece</a><br>
+
+                    <span style="color:grey;" class="date">Published on Jul 13, 2018<br>
+
+                        <a id="topic-link" href="https://www.theverge.com/tech>Technology">Technology</a></span></p>
+
+                    </div>
+
+                <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=ldIaSPCDfPs"><img class="article-side-image" src="armenia/drone.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=ldIaSPCDfPs">Top 10 Best Latest New Technology DRONES 2019</a><br>
+
+                    <span style="color:grey;" class="date">Published on Oct 23, 2018<br>
+
+                        <a id="topic-link" href="https://www.theverge.com/tech>Technology">Technology</a></span></p>
+
+                    </div>
+
+                <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=uQl-r3pqnnQ"><img class="article-side-image" src="armenia/viral.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=uQl-r3pqnnQ">Top 100 Viral Videos of the Year 2018</a><br>
+
+                    <span style="color:grey;" class="date">Published on Dec 30, 2018<br>
+
+                        <a id="topic-link" href="https://www.news.com.au/entertainment">Entertainment & Arts</a></span></p>
+
+                    </div>
+
+                 <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=X-qmgNjJJEM"><img class="article-side-image" src="armenia/Earth.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=X-qmgNjJJEM">100 Greatest discoveries Earth science</a><br>
+
+                    <span style="color:grey;" class="date">Published on Apr 7, 2014<br>
+
+                        <a id="topic-link" href="https://www.theguardian.com/education">Education</a></span></p>
+
+                    </div>
+
+                 <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=DQniWOTizpA"> <img class="article-side-image" src="armenia/health.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=DQniWOTizpA">10 Healthy Tips to Improve Your Digestive System</a><br>
+
+                    <span style="color:grey;" class="date">Published on Aug 14, 2018<br>
+
+                        <a id="topic-link" href="https://www.nbcnews.com/health/health-news">Health</a></span></p>
+
+                    </div>
+
+                 <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=JuIa7sD6sGM"> <img class="article-side-image" src="armenia/sport.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=JuIa7sD6sGM">10 Minutes Most Beautiful Moments of Respect in Sport</a><br>
+
+                    <span style="color:grey;" class="date">Published on Jul 2, 2018<br>
+
+                        <a id="topic-link" href="https://www.bbc.com/sport">Sport</a></span></p>
+
+                    </div>
+
+                 <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=IiFPwqblizg"> <img class="article-side-image" src="armenia/Astronaut.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=IiFPwqblizg">Astronaut Training w/ Chris Pratt, Elizabeth Banks & Will Arnett</a><br>
+
+                    <span style="color:grey;" class="date">Published on Jan 20, 2019<br>
+
+                        <a id="topic-link" href="https://www.news.com.au/entertainment">Entertainment & Arts</a></span></p>
+
+                    </div>
+
+                 <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=lJ87yD_8u3U"> <img class="article-side-image" src="armenia/travel.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=lJ87yD_8u3U">Top 7 INCREDIBLE Travel Destinations of 2019 | Where to Travel This Year!</a><br>
+
+                    <span style="color:grey;" class="date">Published on Dec 9, 2018<br>
+
+                        <a id="topic-link" href="http://www.bbc.com/travel">Travel</a></span></p>
+
+                    </div>
+
+                <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=dZDxuFjM3hI"> <img class="article-side-image" src="armenia/politics.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=dZDxuFjM3hI">Why politics is no joke | Al Murray | TEDxLondon</a><br>
+
+                    <span style="color:grey;" class="date">Published on Jul 14, 2016<br>
+
+                        <a id="topic-link" href="https://www.politico.com/politics">Politics</a></span></p>
+
+                    </div>
+
+                <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=jRcfE2xxSAw"> <img class="article-side-image" src="armenia/business.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=jRcfE2xxSAw">8 MOST PROFITABLE BUSINESS IDEAS FOR 2019</a><br>
+
+                    <span style="color:grey;" class="date">Published on Jan 25, 2019<br>
+
+                        <a id="topic-link" href="https://www.businessinsider.com">Business</a></span></p>
+
+                    </div>
+
+                <div class="clear"></div>
+
+                         <a href="https://www.youtube.com/watch?v=7mt1TSHFb8o"> <img class="article-side-image" src="armenia/gary.png"></a>
+
+                    <div class="side-article">
+
+                    <p><a class="watch-listen-link" href="https://www.youtube.com/watch?v=7mt1TSHFb8o">Need a Business Idea? The Best Way to Find One Is to Stop Looking</a><br>
+
+                    <span style="color:grey;" class="date">Published on Jun 8, 2017<br>
+
+                        <a id="topic-link" href="https://www.businessinsider.com">Business</a></span></p>
+
+                    </div>
+
+
+
+                
+
+            </div>
+
+            <div id="some-more">
+
+                <a href="https://www.bbc.com/news/stories-47093046"><div id="prison">
+              
+                    <h2 class="prison">A prison where the inmates have to go and find jobs</h2> 
+
+                    <img class="prison" src="armenia/prison.png">
+
+                    <p style="color: grey;" class="prison">At Sanganer prison, in the Indian city of Jaipur, inmates get a roof over their head, but no money and no food. This means they must... </p>
+
+                </div></a>
+
+
+                <div class="clear"></div>
+
+                  <a href="https://www.bbc.com/news/business-47063053"><div id="food">
+                  
+                    <h2 class="food">How two friends built a popular food website</h2> 
+
+                    <img class="food" src="armenia/food.png">
+
+                    <p style="color: grey;" class="food">he BBC's weekly The Boss series profiles different business leader from around the world. This week we speak to Amanda Hesser and ... </p>
+
+                 </div></a>
+
+            </div>
+
+
+
+        </div>
+
+        
+
+      
+
+
+
+        
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
